@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Ceviche+One&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: linear-gradient(
+    to right top,
+    #03071e,
+    #110821,
+    #1b0922,
+    #240821,
+    #2d071e,
+    #39051f,
+    #45031e,
+    #51021b,
+    #65001b,
+    #790019,
+    #8b0013,
+    #9d0208
+  );
+}
+
+.section-wrapper {
+  position: relative;
+  background-color: white;
+  padding: 2.5rem;
+  font-size: 1rem;
+  margin-top: 30rem;
+  margin-left: 5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  /*margin: 1rem auto;*/
+  max-width: 350px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.section-wrapper.visible {
+  opacity: 0;
+}
